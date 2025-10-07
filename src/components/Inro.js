@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Intro = () => {
+const IntroPage = () => {
   const navigate = useNavigate();
   const fullText = "Shorten your URL";
   const [text, setText] = useState("");
@@ -29,8 +29,9 @@ const Intro = () => {
         {text}<span className="blinking-cursor">|</span>
       </h1>
       <button
-        className="btn btn-primary btn-lg"
+        className="btn btn-light btn-lg"
         onClick={() => navigate("/login")}
+        style={{ color: "black" }}
       >
         Get Started
       </button>
@@ -53,4 +54,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default IntroPage;

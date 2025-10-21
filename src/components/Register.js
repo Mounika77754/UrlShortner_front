@@ -11,7 +11,7 @@ function Register() {
     e.preventDefault();
     try{
         const res=await axios.post("https://urlshortner-back-h2lv.onrender.com/register",{userName:name,userEmail:email,Password:password});
-        if(res.status===200){
+        if(res.status===201){
             alert(res.data.message)
             navigate("/login")
         }

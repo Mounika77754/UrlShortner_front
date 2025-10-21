@@ -5,6 +5,8 @@ import Register from "./components/Register.js"
 import Home from "./components/Home.js"
 import Protected from "./components/Protected.js";
 import Inro from "./components/Inro.js"
+import Track from "./components/Track.js"
+import Dashboard from "./components/Dashboard.js";
 export default function App(){
     return (
         <>
@@ -12,8 +14,8 @@ export default function App(){
             <Route path="/" element={<Inro/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
-            <Route path="/home" element={<Protected>
-                <Home/>
+            <Route path="/dashboard" element={<Protected>
+                <Dashboard/>
             </Protected>}/>
         </Routes>
         </>

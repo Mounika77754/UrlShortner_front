@@ -18,7 +18,7 @@ function Login() {
 
       if (res.status === 200) {
         localStorage.setItem("token", res.data.token);
-        navigate("/home");
+        navigate("/dashboard");
       }
     } catch (err) {
       alert(err.response?.data?.message || err.message);
